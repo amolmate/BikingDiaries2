@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="9.5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="#FFFF00"
+            android:gravity="right"
+            android:src="@mipmap/mail_icon" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_border"
+                android:orientation="vertical">
+
+                <rider.bikingdiaries.customview.MyTextView
+                    android:id="@+id/et_ride_welcome_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                    android:gravity="center"
+                    android:text="Welcome Biker !"
+                    android:layout_gravity="center"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                    android:paddingRight="@dimen/mr_et_mob_padding_right"
+                    android:textCursorDrawable="@null"
+                    custom:accentTypeface="@string/et_font_name"
+                    custom:baseColor="@color/place_autocomplete_prediction_primary_text"
+                    custom:floatingLabel="highlight"
+                    custom:floatingLabelText="@string/label_name"
+                    custom:primaryColor="@color/place_autocomplete_prediction_primary_text" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_ride_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/label_name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                        custom:accentTypeface="@string/et_font_name"
+                        custom:baseColor="@color/secondary_text"
+                        custom:floatingLabel="highlight"
+                        custom:floatingLabelText="@string/label_name"
+                        custom:primaryColor="@color/secondary_text" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_ride_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/label_last_name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                        custom:accentTypeface="@string/et_font_name"
+                        custom:baseColor="@color/secondary_text"
+                        custom:floatingLabel="highlight"
+                        custom:floatingLabelText="@string/label_name"
+                        custom:primaryColor="@color/secondary_text" />
+
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rider_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_email"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                    android:paddingRight="@dimen/mr_et_mob_padding_right"
+                    android:textCursorDrawable="@null"
+                    custom:accentTypeface="@string/et_font_name"
+                    custom:baseColor="@color/secondary_text"
+                    custom:floatingLabel="highlight"
+                    custom:floatingLabelText="@string/label_name"
+                    custom:primaryColor="@color/secondary_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_signup_rider_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_reg_password"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                        custom:accentTypeface="@string/et_font_name"
+                        custom:baseColor="@color/secondary_text"
+                        custom:floatingLabel="highlight"
+                        custom:floatingLabelText="@string/label_name"
+                        custom:primaryColor="@color/secondary_text" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_signup_rider_re_enter_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/label_reg_password"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                        custom:accentTypeface="@string/et_font_name"
+                        custom:baseColor="@color/secondary_text"
+                        custom:floatingLabel="highlight"
+                        custom:floatingLabelText="@string/label_name"
+                        custom:primaryColor="@color/secondary_text" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_signup_rider_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_mob"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                        custom:accentTypeface="@string/et_font_name"
+                        custom:baseColor="@color/secondary_text"
+                        custom:floatingLabel="highlight"
+                        custom:floatingLabelText="@string/label_name"
+                        custom:primaryColor="@color/secondary_text" />
+
+                    <Spinner
+                        android:id="@+id/et_signup_rider_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/label_reg_password"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                       >
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_signup_rider_birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_birthdate"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                        custom:accentTypeface="@string/et_font_name"
+                        custom:baseColor="@color/secondary_text"
+                        custom:floatingLabel="highlight"
+                        custom:floatingLabelText="@string/label_name"
+                        custom:primaryColor="@color/secondary_text" />
+
+                    <Spinner
+                        android:id="@+id/et_signup_rider_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_marginBottom="@dimen/mr_et_mob_top"
+                        android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                        android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                        android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                        android:layout_weight="0.5"
+                        android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_gender"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                        android:paddingRight="@dimen/mr_et_mob_padding_right"
+                        android:textCursorDrawable="@null"
+                       />
+
+
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rider_riding_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_ride_exp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                    android:paddingRight="@dimen/mr_et_mob_padding_right"
+                    android:textCursorDrawable="@null"
+                    custom:accentTypeface="@string/et_font_name"
+                    custom:baseColor="@color/secondary_text"
+                    custom:floatingLabel="highlight"
+                    custom:floatingLabelText="@string/label_name"
+                    custom:primaryColor="@color/secondary_text" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rider_describe_yourself"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_describe"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                    android:paddingRight="@dimen/mr_et_mob_padding_right"
+                    android:textCursorDrawable="@null"
+                    custom:accentTypeface="@string/et_font_name"
+                    custom:baseColor="@color/secondary_text"
+                    custom:floatingLabel="highlight"
+                    custom:floatingLabelText="@string/label_name"
+                    custom:primaryColor="@color/secondary_text" />
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+
+                    android:text="@string/label_terms_and_conditions" />
+
+
+                <com.dd.iml.SubmitProcessButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:background="#0000ff"
+                    android:text="SIGN UP"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

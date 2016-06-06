@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_sv_si"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mr_et_mob_top"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:drawableLeft="@mipmap/mail_icon"
+                android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_username"
+                android:inputType="textEmailAddress"
+
+                android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                android:paddingRight="@dimen/mr_et_mob_padding_right"
+                android:textCursorDrawable="@null"
+                custom:accentTypeface="@string/et_font_name"
+                custom:baseColor="@color/secondary_text"
+                custom:floatingLabel="highlight"
+                custom:floatingLabelText="@string/label_username"
+                custom:primaryColor="@color/secondary_text" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mr_et_mob_top"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:drawableLeft="@mipmap/pwd_icon"
+                android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+
+                android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                android:paddingRight="@dimen/mr_et_mob_padding_right"
+                android:textCursorDrawable="@null"
+                custom:accentTypeface="@string/et_font_name"
+                custom:baseColor="@color/secondary_text"
+                custom:floatingLabel="highlight"
+                custom:floatingLabelText="@string/label_password"
+
+                custom:primaryColor="@color/secondary_text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/btn_margin_left"
+                android:layout_marginRight="@dimen/btn_margin_right"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:paddingLeft="@dimen/btn_padding_left"
+                android:paddingRight="@dimen/btn_padding_right"
+                android:text="@string/label_login"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+
+                custom:pb_colorComplete="@color/theme_color"
+                custom:pb_colorNormal="@color/theme_color"
+                custom:pb_colorPressed="@android:color/black"
+                custom:pb_colorProgress="@android:color/black" />
+
+        <rider.bikingdiaries.customview.MyTextView
+            android:id="@+id/tv_forgot_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:textColor="@android:color/black"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="Forgot Password?"
+            android:paddingBottom="@dimen/dimen_20_dp"
+            android:layout_marginTop="@dimen/btn_margin_top"
+            android:layout_marginLeft="@dimen/btn_margin_left"
+            android:layout_marginRight="@dimen/btn_margin_right"/>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_15_dp">
+
+                <rider.bikingdiaries.customview.MyTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_login"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:text="Or"
+                    android:paddingBottom="@dimen/dimen_20_dp"
+                    android:layout_marginTop="@dimen/btn_margin_top"
+                    android:layout_marginLeft="@dimen/btn_margin_left"
+                    android:layout_marginRight="@dimen/btn_margin_right"/>
+
+                <Button
+                    android:id="@+id/btn_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginLeft="@dimen/btn_margin_left"
+                    android:layout_marginRight="@dimen/btn_margin_right"
+                    android:layout_marginTop="@dimen/btn_margin_top"
+                    android:paddingLeft="@dimen/btn_padding_left"
+                    android:background="@mipmap/fb_btn"
+                    android:paddingRight="@dimen/btn_padding_right"/>
+
+                <Button
+                    android:id="@+id/btn_gplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginLeft="@dimen/btn_margin_left"
+                    android:layout_marginRight="@dimen/btn_margin_right"
+                    android:layout_marginTop="@dimen/btn_margin_top"
+                    android:paddingLeft="@dimen/btn_padding_left"
+                    android:background="@mipmap/gplus_btn"
+                    android:paddingRight="@dimen/btn_padding_right"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    <!--</ScrollView>-->
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

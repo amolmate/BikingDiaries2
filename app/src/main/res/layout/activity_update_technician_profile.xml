@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rl_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"  >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/theme_color"
+                        android:title="Update Profile"
+                        android:minHeight="?attr/actionBarSize" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/nested_sv_si"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="@dimen/dimen_image_size"
+                            android:layout_height="@dimen/dimen_image_size"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:src="@mipmap/biker_profile"
+                            app:border="true"
+                            app:border_color="@color/grey_color"
+                            app:border_width="1dp"
+                            app:shadow="true" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mr_et_mob_top"
+                            android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                            android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                            android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                            android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                            android:paddingRight="@dimen/mr_et_mob_padding_right"
+                            android:textCursorDrawable="@null"
+                            custom:accentTypeface="@string/et_font_name"
+                            custom:baseColor="@color/secondary_text"
+                            custom:floatingLabel="highlight"
+                            custom:floatingLabelText="@string/label_name"
+                            custom:primaryColor="@color/secondary_text" />
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mr_et_mob_top"
+                            android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                            android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                            android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                            android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_last_name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                            android:paddingRight="@dimen/mr_et_mob_padding_right"
+                            android:textCursorDrawable="@null"
+                            custom:accentTypeface="@string/et_font_name"
+                            custom:baseColor="@color/secondary_text"
+                            custom:floatingLabel="highlight"
+                            custom:floatingLabelText="@string/label_last_name"
+                            custom:primaryColor="@color/secondary_text" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_mob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mr_et_mob_top"
+                            android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                            android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                            android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                            android:drawableLeft="@mipmap/mobile"
+                            android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_reg_mob"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                            android:paddingRight="@dimen/mr_et_mob_padding_right"
+                            android:textCursorDrawable="@null"
+                            custom:accentTypeface="@string/et_font_name"
+                            custom:baseColor="@color/secondary_text"
+                            custom:floatingLabel="highlight"
+                            custom:floatingLabelText="@string/label_reg_mob"
+                            custom:maxCharacters="10"
+                            custom:primaryColor="@color/secondary_text" />
+
+
+                        <rider.bikingdiaries.customview.MyTextView
+                            android:id="@+id/tv_forgot_pwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_login"
+                            android:textColor="@android:color/black"
+                            android:gravity="left"
+                            android:textSize="16sp"
+                            android:text="City*"
+                            android:paddingBottom="@dimen/dimen_20_dp"
+                            android:layout_marginTop="@dimen/btn_margin_top"
+                            android:layout_marginLeft="@dimen/btn_margin_left"
+                            android:layout_marginRight="@dimen/btn_margin_right"/>
+
+                        <Spinner
+                            android:id="@+id/sp_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/btn_margin_left"
+                            android:layout_marginRight="@dimen/btn_margin_right">
+                            
+                        </Spinner>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mr_et_mob_top"
+                            android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                            android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                            android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                            android:orientation="horizontal">
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/et_service_experience"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_service_exp"
+                                android:inputType="number"
+                                android:layout_alignParentLeft="true"
+                                android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                                android:paddingRight="@dimen/mr_et_mob_padding_right"
+                                android:textCursorDrawable="@null"
+                                custom:accentTypeface="@string/et_font_name"
+                                custom:baseColor="@color/secondary_text"
+                                custom:floatingLabel="highlight"
+                                android:layout_toLeftOf="@+id/tv_years"
+                                custom:floatingLabelText="@string/label_service_exp"
+                                custom:primaryColor="@color/secondary_text" />
+
+                            <rider.bikingdiaries.customview.MyTextView
+                                android:id="@+id/tv_years"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_login"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:textSize="16sp"
+                                android:layout_alignBottom="@+id/et_service_experience"
+                                android:text="years"
+                                android:layout_alignParentRight="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <rider.bikingdiaries.customview.MyTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_login"
+                            android:textColor="@android:color/black"
+                            android:gravity="left"
+                            android:textSize="16sp"
+                            android:text="Bike Serviced*"
+                            android:paddingBottom="@dimen/dimen_20_dp"
+                            android:layout_marginTop="@dimen/btn_margin_top"
+                            android:layout_marginLeft="@dimen/btn_margin_left"
+                            android:layout_marginRight="@dimen/btn_margin_right"/>
+
+                        <Spinner
+                            android:id="@+id/sp_bike"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/btn_margin_left"
+                            android:layout_marginRight="@dimen/btn_margin_right">
+
+                        </Spinner>
+
+                        <dd.processbutton.iml.ActionProcessButton
+                            android:id="@+id/btn_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/btn_margin_left"
+                            android:layout_marginRight="@dimen/btn_margin_right"
+                            android:layout_marginTop="@dimen/btn_margin_top"
+                            android:paddingLeft="@dimen/btn_padding_left"
+                            android:paddingRight="@dimen/btn_padding_right"
+                            android:text="@string/label_update"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            custom:pb_colorComplete="@color/theme_color"
+                            custom:pb_colorNormal="@color/theme_color"
+                            custom:pb_colorPressed="@android:color/black"
+                            custom:pb_colorProgress="@android:color/black" />
+
+                    </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="rider.bikingdiaries.fragments.Drawer_Fragment"
+            android:layout_width="290dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_drawer"
+            tools:layout="@layout/fragment_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

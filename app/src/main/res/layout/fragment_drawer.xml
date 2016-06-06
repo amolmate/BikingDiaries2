@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_menu_above_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:paddingTop="30dp" >
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/biker_profile"
+                        app:border="true"
+                        app:border_color="@color/grey_color"
+                        app:border_width="1dp"
+                        app:shadow="true" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_member_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_profile"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:descendantFocusability="blocksDescendants"
+                        android:focusable="true"
+                        android:paddingBottom="@dimen/dimen_10_dp"
+                        android:paddingTop="@dimen/dimen_10_dp" >
+
+                        <rider.bikingdiaries.customview.MyTextView
+                            android:id="@+id/tv_member_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:clickable="false"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:inputType="textVisiblePassword"
+                            android:text="Name"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            customfontdemo:fontName="@string/font_name" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_15_dp"
+                    android:paddingTop="@dimen/dimen_15_dp"
+                    android:clickable="true" >
+
+                    <rider.bikingdiaries.customview.MyTextView
+                        android:id="@+id/tv_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textVisiblePassword"
+
+                        android:text="Home"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        customfontdemo:fontName="@string/font_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bike_diaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_15_dp"
+                    android:paddingTop="@dimen/dimen_15_dp"
+                    android:clickable="true" >
+
+                    <rider.bikingdiaries.customview.MyTextView
+                        android:id="@+id/tv_bike_diaries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textVisiblePassword"
+
+                        android:text="Biking diaries"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        customfontdemo:fontName="@string/font_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bike_rides"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_15_dp"
+                    android:paddingTop="@dimen/dimen_15_dp"
+                    android:clickable="true" >
+
+                    <rider.bikingdiaries.customview.MyTextView
+                        android:id="@+id/tv_bike_rides"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textVisiblePassword"
+
+                        android:text="Biking rides"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        customfontdemo:fontName="@string/font_name" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <rider.bikingdiaries.customview.MyTextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:enabled="false"
+            android:inputType="textVisiblePassword"
+            android:text="Powered By"
+            android:textColor="@android:color/black"
+            customfontdemo:fontName="@string/font_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+</RelativeLayout>

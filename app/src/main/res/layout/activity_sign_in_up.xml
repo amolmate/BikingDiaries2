@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabGravity="fill"
+        android:layout_marginTop="@dimen/dimen_20_dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/theme_color"
+        app:tabTextColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_signup_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:padding="@dimen/dimen_10_dp"
+            android:layout_above="@+id/indicator"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

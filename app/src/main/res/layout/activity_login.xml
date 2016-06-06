@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="7.5"
+        android:orientation="vertical"
+       >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#FFFF00"
+            android:gravity="right"
+            android:src="@mipmap/mail_icon"
+            android:layout_gravity="right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/login_border">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/mr_et_mob_top"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_ride_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mr_et_mob_top"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                android:paddingRight="@dimen/mr_et_mob_padding_right"
+                android:textCursorDrawable="@null"
+                custom:accentTypeface="@string/et_font_name"
+                custom:iconLeft="@drawable/common_plus_signin_btn_icon_light_normal"
+                custom:baseColor="@color/secondary_text"
+                custom:floatingLabel="highlight"
+                custom:floatingLabelText="@string/label_name"
+                custom:primaryColor="@color/secondary_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_ride_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mr_et_mob_top"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:drawablePadding="@dimen/mr_et_mob_padding_icon"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_reg_password"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/mr_et_mob_padding_left"
+                android:paddingRight="@dimen/mr_et_mob_padding_right"
+                android:textCursorDrawable="@null"
+                custom:accentTypeface="@string/et_font_name"
+                custom:iconLeft="@drawable/common_plus_signin_btn_icon_light_normal"
+                custom:baseColor="@color/secondary_text"
+                custom:floatingLabel="highlight"
+                custom:floatingLabelText="@string/label_name"
+                custom:primaryColor="@color/secondary_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:orientation="horizontal"
+                >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+
+                android:text="Rember Me"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:orientation="horizontal"
+                >
+
+                <com.dd.iml.SubmitProcessButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="RIDE IN"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:textColor="#ffffff"
+                    android:background="#ff0000"
+                    />
+
+                <com.dd.iml.SubmitProcessButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="SIGN UP"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:textColor="#ffffff"
+                    android:background="#0000ff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/image_social_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <ImageView
+                    android:id="@+id/image_social_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <ImageView
+                    android:id="@+id/image_social_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/mr_et_mob_top"
+                    android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                    android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mr_et_mob_margin_left"
+                android:layout_marginRight="@dimen/mr_et_mob_margin_right"
+                android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No accouont?  "
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTER"
+                    android:textColor="#ff0000"
+                    android:layout_marginTop="@dimen/mr_et_mob_bottom"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

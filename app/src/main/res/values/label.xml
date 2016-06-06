@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="enter_reg_mob">Please enter registered mobile number. </string>
+    <string name="valid_reg_mob">Please enter valid mobile number. </string>
+    <string name="enter_otp">Please enter OTP.  </string>
+    <string name="enter_valid_otp">Please enter Valid OTP.  </string>
+
+    <string name="label_next">Next</string>
+    <string name="label_update">Update</string>
+    <string name="hint_reg_mob">Mobile Number</string>
+    <string name="label_reg_mob">Enter Mobile Number</string>
+        
+    <string name="hint_username">Email id</string>
+    <string name="label_username">Enter Email id</string>
+    
+    <string name="hint_password">Password</string>
+    <string name="label_password">Enter Password</string>
+
+
+    <string name="hint_reg_email">Email id</string>
+    <string name="label_reg_email">Enter Email id*</string>
+
+    <string name="hint_reg_password">Enter Password</string>
+    <string name="label_reg_password">Re-enter Password*</string>
+    
+    <string name="hint_name">Name</string>
+    <string name="label_name">Enter First Name*</string>
+
+    <string name="hint_last_name">Last Name</string>
+    <string name="label_last_name">Enter Last Name*</string>
+    
+    <string name="hint_mob">Mobile Number</string>
+    <string name="label_mob">Enter Mobile Number</string>
+
+    <string name="hint_start_location">Start Location</string>
+    <string name="label_start_location">Enter Start Location</string>
+
+    <string name="hint_end_location">End Location</string>
+    <string name="label_end_location">Enter End Location</string>
+    
+    <string name="hint_email">Email Id</string>
+    <string name="label_email">Enter Email Id</string>
+
+    <string name="hint_birthdate">Date of Birth</string>
+    <string name="hint_gender">Gender</string>
+
+    <string name="hint_ride_exp">Riding Experience</string>
+    <string name="label_ride_exp">Enter Riding Experience</string>
+
+    <string name="hint_total_km">Total kms</string>
+    <string name="label_total_km">Enter Total kmse</string>
+
+    <string name="label_terms_and_conditions">I agree to all the Terms and Conditions</string>
+
+    <string name="hint_service_exp">Service Experience</string>
+    <string name="label_service_exp">Enter Service Experience</string>
+
+    <string name="hint_dob">Date Of Birth</string>
+    <string name="label_dob">Enter Date Of Birth</string>
+
+    <string name="hint_begin_date">Begin Date</string>
+    <string name="label_begin_date">Enter Begin Date</string>
+
+    <string name="hint_end_date">End Date</string>
+    <string name="label_end_date">Enter End Date</string>
+
+    <string name="hint_describe">Describe yourself</string>
+    <string name="label_describe">Describe yourself</string>
+    
+    <string name="hint_otp">OTP</string>
+    <string name="label_otp">Enter OTP</string>
+    <string name="label_ok">OK</string>
+    
+    <string name="label_register">Register</string>
+    <string name="label_back">Back</string>
+    <string name="label_submit">Submit</string>
+    <string name="label_powered">powered by</string>
+    
+    <string name="label_welcome">Welcome to BEL Wi-Fi</string>
+    <string name="label_login">Login</string>
+    <string name="label_please">Please wait...</string>
+    
+    <string name="label_connect_free_wifi">Connect FREE Wi-Fi</string>
+    <string name="label_make_payment">Make Payment</string>
+    
+    <string name="label_open_browser">Open Browser</string>
+    
+    <string name="label_pacakge_name">Pacakge Name</string>
+    
+    <string name="label_pacakge_rate">Pacakge Rate</string>
+    <string name="label_existing">Existing User</string>
+    <string name="label_free_wifi_user">Free Wi-Fi User</string>
+
+    
+    <string name="label_package_name">Package Name</string>
+    <string name="label_expiry">Expiry Date</string>
+    
+    <string name="label_status">Status</string>
+</resources>
